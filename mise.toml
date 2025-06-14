@@ -1,0 +1,7 @@
+[tools]
+poetry = { version="latest", pyproject="{{ config_root }}/pyproject.toml" }
+python = "3.13.3"  # must be after poetry so the poetry bin is first in PATH
+
+[env]
+MISE_POETRY_AUTO_INSTALL = 1
+MISE_POETRY_VENV_AUTO = 1

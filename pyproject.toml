@@ -1,0 +1,19 @@
+[project]
+name = "recipes-convertor"
+version = "0.0.1"
+description = ""
+authors = [
+    {name = "Jackson Porter",email = "jackson@jacksonporterjp.com"}
+]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+[project.scripts]
+recipes-convertor = "recipes_convertor.app:main"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
