@@ -2,14 +2,11 @@
 name = "recipes-convertor"
 version = "0.0.1"
 description = ""
-authors = [
-    {name = "Jackson Porter",email = "jackson@jacksonporterjp.com"}
-]
-license = {text = "MIT"}
+authors = [{ name = "Jackson Porter", email = "jackson@jacksonporterjp.com" }]
+license = { text = "MIT" }
 readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-]
+requires-python = ">=3.13,<4.0"
+dependencies = ["google-generativeai>=0.3.0", "loguru (>=0.7.3,<0.8.0)", "black (>=25.1.0,<26.0.0)"]
 
 [project.scripts]
 recipes-convertor = "recipes_convertor.app:main"
@@ -17,3 +14,21 @@ recipes-convertor = "recipes_convertor.app:main"
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^7.2.0"
+pre-commit = "^4.2.0"
+black = "^25.1.0"
+pylint = "^3.3.7"
+gitpython = "^3.1.44"
+mypy = "^1.16.0"
+click = "^8.2.1"
+
+[tool.black]
+line-length = 100
+
+[tool.pylint.messages_control]
+disable = ["missing-module-docstring"]
+
+[tool.pylint.format]
+max-line-length = 100

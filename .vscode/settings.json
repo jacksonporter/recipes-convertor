@@ -1,3 +1,11 @@
 {
-    "python.defaultInterpreterPath": "/Users/overlorde/.local/share/mise/installs/python/3.13.3/bin/python"
+    "python.defaultInterpreterPath": "/Users/overlorde/.local/share/mise/installs/python/3.13.3/bin/python",
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true
+    },
+    "debug.javascript.defaultRuntimeExecutable": {
+        "pwa-node": "/Users/overlorde/.local/share/mise/shims/node"
+    }
 }

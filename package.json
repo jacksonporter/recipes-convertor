@@ -1,0 +1,10 @@
+{
+    "name": "recipes-convertor",
+    "version": "0.0.0",
+    "description": "Recipes Convertor",
+    "type": "module",
+    "devDependencies": {
+        "markdownlint-cli": "^0.45.0"
+    },
+    "packageManager": "yarn@4.9.1"
+}
